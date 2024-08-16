@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Tanım</h2>
+      <p>Cennet Bahçelerinde 2 Gün'ün basımını kutluyoruz</p>
+      <p>Yazar Berkay Perktaş yeni kitabı için bir kampanya düzenliyor: Şanslı50</p>
+      <p>Yazarın ilk kitabı Düşün İftira kitaplarının 5 tanesinin içine 50 lira sakladı. Yazar, şanslı 5 kişinin kitaba ödediği paranın %63'nü okuruna geri veriyor. </p>
+      <p>İzmir-Hatay-Ankara içinde düzenlenecek bu özel kampanya için şimdiden herkesin şansı bol olsun.</p>
+      <p>5 şanslı kişiden 2 kişi İzmir, 1 kişi Ankara, 2 kişi Hatay içinden çıkacaktır.</p>
+    </div>
+    <div class="card">
+      <h2>Kurallar</h2>
+      <ul>
+        <li>Kitap yazardan özel imzalı bir şekilde alınacaktır.</li>
+        <li>Bir kişi ikiden fazla kitap alamaz.</li>
+        <li>Düşün|Kitap instagram sayfasını takip etmeyen kampanyaya katılamaz veya onun adına başkası kitap alamaz. Sadece normal fiyata kitap alabilir.(75 lira) Instagram linki web sayfası içinde mevcuttur.</li>
+        <li>Instagram kullanmayan katılımcının aşağıda yer alan formun içine ismini ve soyadını yazıp instagram kullanmıyorum butonunu işaretlemesi gerekmektedir. Bu işlem yapılmazsa kampanyaya katılanılamaz.</li>
+        <li>Kampanyaya katılan, birden fazla kitap alanlara indirim uygulanmaz. (2 kitap 150 lira) </li>
+        <li>Kampanyaya katılmayıpta 2 kitap alana fiyat 130 lira olacaktır.</li>
+        <li>Şehir için belirtilen şanslı kişiler bulunduğunda kampanya sonlandırılacak. O vakite kadar kampanya devam edecektir.</li>
+        <li>Kitap seçildikten sonra değiştirilemez.</li>
+        <li>Kitap seçilirken kitabın sayfalarına bakamaz.</li>
+        <li>Kampanyaya katılacak kişinin yazara önceden bilgi vermesi gerekmektedir.</li>
+        <li>Bir kişi kendi adına 2 kitap alamaz.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>İşleyiş</h2>
+      <p>Yazar, kampanyaya katılmak isteyen kişiye içinde Düşün İftira kitaplarının yer aldığı bir kutu verir ya da katılımcıyla canlı bağlantı kurulur. Katılan kişi sayfalara bakmadan bir yada iki kitap seçer ve kutu kapatılır. Kişinin kaybetmesi, kitabın ıslanması veya yıpranması durumunda değişiklik yapamaz. Eğer 1 kitap aldıysa ikincisini alabilir.</p>
+      <p>Kampanyaya katılanın, kazanıp kazanmadığını öğrenme işleminin yalnız başınayken öğrenmesi önerilir.</p>
+      <p>Kampanyaya uzaktan katılanlara ürünün ulaştırılması için gardrops uygulaması kullanılacaktır.</p>
+    </div>
+    <br>
+    <form action="https://formspree.io/f/mzzppgeo" method="post">
+      <label for="fname">AD SOYAD:</label> <br>
+      <input type="text" id="fname" name="fname"> 
+      <input type="checkbox" id="Instagram" name="Instagram" value="Instagram">
+      <label for="Instagram kullanılmıyor."> Instagram kullanmıyorum</label> <br> <br>
+      <input type="Submit" value="Gönder">
+    </form>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Kampanyanın Başlama Tarihleri</h3>
+      <div class="fakeimg"><h4>İZMİR</h4></div>
+      <p>Başlangıç Tarihi: 16 Ağustos 2024</p>
+      <hr>
+      <div class="fakeimg"><h4>HATAY</h4></div>
+      <p>Başlangıç Tarihi: 2 Eylül 2024</p>
+      <hr>
+      <div class="fakeimg"><h4>ANKARA</h4></div>
+      <p>Başlangıç Tarihi: 13 Eylül 2024</p>
+    </div>
+    <div class="card">
+      <h3>Şanslı Kişiler </h3>
+      <h4><b>1</b></h4>
+      <h4><b>2</b></h4>
+      <h4><b>3</b></h4>
+      <h4><b>4</b></h4>
+      <h4><b>5</b></h4>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+

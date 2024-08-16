@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.center {
+  text-align: center;
+  border: 3px solid green;
+  padding: 15px;
+  margin: 10px; 
+  width: calc(50% - 40px); 
+  float: left; 
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;">DİKKAT</h2>
+<p>Düşün|Kitap'ın Letgo alışveriş sayfasına geçiyorsunuz. Düşün|Kitap'ın İzmir ve Diyarbakır olmak üzere 2 tane alanı bulunmaktadır. Lütfen hangi bölgeye bağlanmak istediğinizi seçiniz.</p>
+
+<div class="row">
+  <div class="center">
+    <h2>İZMİR</h2>
+    <p><a href="https://www.letgo.com/profile/127594506">Geçiş Yap</a></p>
+  </div>
+
+  <div class="center">
+    <h2>DİYARBAKIR</h2>
+    <p><a href="https://www.letgo.com/profile/13402623">Geçiş Yap</a></p   
+  </div>
+</div>
+
+</body>
+</html>

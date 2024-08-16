@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+  <link rel="icon" href="icon/icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: brown;
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: brown;
+      position: -webkit-sticky; 
+      position: sticky;
+      top: 0;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: rgb(14, 139, 189);
+    }
+
+    .active {
+      background-color: tan;
+    }
+
+    .slider {
+      width: 100%;
+      height: 102%;
+      overflow: hidden;
+      margin: auto;
+      position: relative;
+      border: 1px solid #ccc;
+    }
+
+    .slider-content {
+      display: flex;
+      width: 400%; 
+      animation: slide 30s infinite;
+    }
+
+    .slider-item {
+      flex: 0 0 25%; 
+      position: relative;
+    }
+
+    .slider-item img {
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover;
+    }
+
+    .slider-item button {
+      position: absolute;
+      bottom: 2%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: white;
+      color: brown;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      10% { transform: translateX(0); }
+      20% { transform: translateX(-25%); }
+      30% { transform: translateX(-25%); }
+      40% { transform: translateX(-50%); }
+      50% { transform: translateX(-50%); }
+      60% { transform: translateX(-75%); }
+      70% { transform: translateX(-75%); }
+      80% { transform: translateX(0); }
+      90% { transform: translateX(0); }
+    }
+
+    .header-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .header-image img {
+      max-width: 40%;
+      height: auto;
+      display: inline-block;
+    }
+
+    .footer {
+      background-color: #6f18a8;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      color: white;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    .contact-info span {
+      vertical-align: middle;
+    }
+
+    a {
+      color: brown;
+    }
+
+  </style>
+</head>
+<body>
+ 
+  <ul>
+    <li><a class="active" href="#home">ANASAYFA</a></li>
+    <li><a href="Kitaplarimiz.html">KİTAPLARIMIZ</a></li>
+    <li><a href="Yazar.html">YAZARLARIMIZ</a></li>
+    <li><a href="Hikaye.html">BENDE YAZABİLİRİM</a></li>
+    <li><a href="Diger.html">DİĞER ÜRÜNLERİMİZ</a></li>
+    <li style="float:right; color: white; font-size:14px;"><br>DÜŞÜN|KİTAP</li>
+  </ul>
+
+  <div class="header-image">
+    <img src="img/Logo.JPG" alt="Header Image">
+  </div>
+
+  <div class="Baslik">
+    <h2>Haberler <hr></h2> 
+  </div>
+  
+  <div class="slider">
+    <div class="slider-content">
+      <div class="slider-item">
+        <img src="img/Haber1.png" alt="">
+        <button onclick="window.location.href='Haber1.html'">Detaylar</button>
+      </div>
+
+      <div class="slider-item">
+       <img src="img/Haber2.png" alt="">
+       <button onclick="window.location.href='Haber2.html'">Detaylar</button>
+      </div>
+      
+      <div class="slider-item">
+        <img src="img/Haber3.png" alt="">
+      </div>
+
+      <div class="slider-item">
+        <img src="img/Sansli50.jpg" alt="">
+        <button onclick="window.location.href='Haber4.html'">Detaylar</button>
+      </div>
+    </div>
+  </div>
+
+ <div class="Baslik">
+    <h2>Etkinlikler <hr></h2> 
+  </div>
+  
+ 
+  
+  <div class="footer">
+    <h3>İletişim</h3>
+    <div class="contact-info">
+      <i class="fas fa-envelope-square"></i><span>berkay.dusunkitap@gmail.com</span>
+      <i class="fab fa-instagram"></i><span>https://www.instagram.com/dusun_kitap_2022/</span>
+    </div>
+  </div>
+
+  <a href="1.html">Deney</a>
+ 
+</body>
+</html>
+

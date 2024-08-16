@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>Yazarlarımız</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href="icon/Yazar.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color:black;
+}
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:brown;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(14, 139, 189);;
+}
+
+.active {
+  background-color: tan; 
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 35px;
+  
+}
+
+.columnA {
+  float: left;
+  width: 50%;
+  padding: 35px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1{
+	color:white;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 600px){
+  img{
+    width: 100%;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+
+<ul>
+        <li><a href="index.html">ANASAYFA</a></li>
+        <li><a href="Kitaplarimiz.html">KİTAPLARIMIZ</a></li>
+        <li><a class="active" href="#home">YAZARLARIMIZ</a></li>
+        <li><a href="Hikaye.html">BENDE YAZABİLİRİM</a></li>
+        <li><a href="Diger.html">DİĞER ÜRÜNLERİMİZ</a></li>
+        <li style= "float:right; color: white; font-size:14px;" ><br>DÜŞÜN|KİTAP</li>
+      </ul> 
+
+
+<div class="row">
+  <div class="column">
+    <h2 style ="color:white;">Berkay Perktaş</h2>
+    <img src = "img/Berkay.png"> 
+    <p style ="color:white;">2002 yılında Elazığda doğdu. <br> İlköğretim'i Manisada, Ortaöğretim'i İzmirde tamamladı.<br>
+    Daha sonra 2024 yılında Ostim Teknik Üniversitesini bitirdi. Bekar ve Ankara'da ikametgah etmektedir. </p>
+    <p style = "color:white;">Mail adresi: berkay.dusunkitap@gmail.com </p>
+  </div>
+  
+  <div class="column">
+    <h2 style ="color:white;">M.Sinan Perktaş</h2>
+    <img src = "img/Sinan.png" width="250px" height="300px">
+    <p style ="color:white;">1968 yılında, Hatay ili Kırıkhan ilçesinde doğdu.<br> İlköğretim ve Ortaöğretim'i yine aynı ilçede tamamladıktan sonra 1991 yılında Kara Harp Okulunu bitirdi.<br>
+    Daha sonra Gazi Üniversitesi Fen bilimleri Enstitüsünde iki alanda yüksek lisans eğitimini tamamladı. Evli ve iki çocuk babasıdır. Şubat 2023 de yaşanan depremden beri Diyarbakırda ikamet ediyor.  </p>
+    <p style = "color:white;">Mail adresi: sinan.dusunkitap@gmail.com </p>
+  </div>
+  
+  <div class="columnA">
+  	 <h3 style = "color:white;">Kitapları</h3>
+ 	    <img src = "img/İftira.jpg" width="200px">
+       <img src = "img/CBİG.jpg" width="193px">
+      
+  </div>
+  
+  <div class="columnA">
+  	 <h3 style = "color:white;">Kitapları</h3>
+ 	    <img src = "img/Masum.jpg" width="200px">
+     <img src = "img/Zincirlenmis.jpg" width="200px">
+     <img src = "img/Karanlik.jpg"width="224px">
+     
+  </div>
+  
+
+</body>
+</html>
+
+

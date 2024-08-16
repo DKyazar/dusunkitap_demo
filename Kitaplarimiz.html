@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitaplar</title>
+    <link rel = "icon" href="icon/Kitap.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:brown;
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+    }   
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgb(14, 139, 189);;
+    }
+
+    .active {
+        background-color: tan;
+    }
+
+    .image-container {
+        height: 50%;
+        display: flex;
+    }
+
+    .image-box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+    }
+
+    .İftira {
+        background-color: lightskyblue;
+    }
+    @media only screen and (min-width: 150px) and (max-width: 600px){
+    .İftira img{
+        width: 80%;
+    }
+}
+  
+
+    .Masum {
+        background-color: lightgreen;
+    }
+    @media only screen and (min-width: 150px) and (max-width: 600px){
+    .Masum img{
+        width: 80%;
+    }
+}
+
+    .Zincirlenmis {
+        background-color: lightcoral;
+    }
+
+    @media only screen and (min-width: 150px) and (max-width: 600px){
+    .Zincirlenmis img{
+        width: 80%;
+    }
+}
+
+    .Karanlik {
+        background-color: lightpink;
+    }
+
+    @media only screen and (min-width: 150px) and (max-width: 600px){
+    .Karanlik img{
+        width: 85%;
+    }
+}
+
+    .Bahce {
+        background-color: rgba(33, 128, 9, 0.713);
+        
+    }
+
+@media only screen and (min-width: 150px) and (max-width: 600px){
+    .Bahce img{
+        width: 75%;
+    }
+}
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: not-allowed; 
+    }
+    @media only screen and (min-width: 150px) and (max-width: 600px){
+    .button{
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        font-size: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: not-allowed; 
+    }
+}
+</style>
+<body>
+    <ul>
+        <li><a href="index.html">ANASAYFA</a></li>
+        <li><a class="active" href="#home">KİTAPLARIMIZ</a></li>
+        <li><a href="Yazar.html">YAZARLARIMIZ</a></li>
+        <li><a href="Hikaye.html">BENDE YAZABİLİRİM</a></li>
+        <li><a href="Diger.html">DİĞER ÜRÜNLERİMİZ</a></li>
+        <li style="float:right; color: white; font-size:14px;"><br>DÜŞÜN|KİTAP</li>
+    </ul> 
+
+    <div class="image-container">
+        <div class="image-box İftira">
+            <img src="img/İftira.jpg" alt="İftira">
+            <button class="button" disabled>75 lira</button>
+        </div>
+        <div class="image-box Masum">
+            <img src="img/Masum.jpg" alt="Masum">
+            <button class="button" disabled>65 lira</button>
+        </div>
+        <div class="image-box Zincirlenmis">
+            <img src="img/Zincirlenmis.jpg" alt="Zincirlenmis">
+            <button class="button" disabled>80 lira</button>
+        </div>
+        <div class="image-box Karanlik">
+            <img src="img/Karanlik.jpg" alt="Karanlik">
+            <button class="button" disabled>100 lira</button>
+        </div>
+
+        <div class="image-box Bahce">
+            <img src="img/CBİG.jpg" alt="Bahce" width= "260px">
+            <button class="button" disabled>55 lira</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haber Sayfası 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background: #f4f4f4;
+        }
+
+        .header {
+            text-align: center;
+            background: url('img/Haber1.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0; 
+        }
+
+        .header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .leftcolumn {   
+            flex: 80%;
+            padding-right: 20px;
+        }
+
+        .rightcolumn {
+            flex: 20%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .card h2, .card h3 {
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <p style="font-size:10px;">İsmail Perktaş ve Ayfer Perktaş'ın anısına yazılmıştır.</p>
+                <h2>Özet</h2>
+                <p>2023 yılında tam 10 şehrin etkilendiği bir deprem yaşandı. İbrahim ve Ayla çiftinin evi yıkıldı ve ikisi de 2 gün boyunca enkaz altında kaldılar. Bu çift ve komşuları Şeref hayata tekrar tutunmaya çalışırken başlarına normal olmayan bir dizi olay geliyor ve kendilerini yemyeşil bir bahçede buluyorlar. </p>
+                <p>Bir gün İbrahim evlatlarını bir teste sokmaya karar veriyor ve birdenbire ortadan kayboluyor. Kendisini ölmüş gibi gösteriyor. Bunu gören kardeşler mirası paylaşmak için birbirine giriyor. Kardeşlik yerini düşmanlığa bırakıyor.</p>
+                <p>Kardeşliğin ne olduğunu unutanlara hatırlatabilecek olan bu hikayeye hazır olun.</p>
+            </div>
+            <div class="card">
+                <h2>Karakterler</h2> 
+                <h3>Halil İbrahim</h3>
+                <p>Enkaz altında kalan bir baba.</p> 
+                <h3>Ayla</h3>
+                <p>Enkaz altında kalan bir anne. İbrahim'in karısı.</p>
+                <h3>Şeref</h3>
+                <p>İbrahim ve Ayla çiftinin komşuları.</p> 
+                <h3>Oğuz</h3>
+                <p>İbrahim ve Ayla'nın oğlu.</p>
+                <h3>Hilda</h3>
+                <p>İbrahim ve Ayla'nın 1. kızı.</p>
+                <h3>Ecesu</h3>
+                <p>İbrahim ve Ayla'nın 2. kızı.</p>
+                <h3>Barlas</h3>    
+                <p>İbrahim'in avukatı.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Fragman</h2>
+                <video width="100%" controls>
+                    <source src="video/Fragman.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+            <div class="card">
+                <h3>Kitap Kapağı</h3>
+                <img src="img/CBİG.jpg" alt="Kitap Kapağı">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+    </div>
+</body>
+</html>

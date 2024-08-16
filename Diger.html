@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: brown;
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(14, 139, 189);
+        }
+
+        .active {
+            background-color: tan;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-item a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px; /* Metin boyutunu büyütme */
+        }
+
+        .logo-item img {
+            width: 150px; /* Genişlik */
+            height: 150px; /* Yükseklik */
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .discounts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .discounts img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .discounts h2 {
+            margin: 0;
+            font-size: 36px; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">ANASAYFA</a></li>
+        <li><a href="Kitaplarimiz.html">KİTAPLARIMIZ</a></li>
+        <li><a href="Yazar.html">YAZARLARIMIZ</a></li>
+        <li><a href="Hikaye.html">BENDE YAZABİLİRİM</a></li>
+        <li><a class="active" href="#home">DİĞER ÜRÜNLERİMİZ</a></li>
+        <li style="float:right; color: white; font-size:14px;"><br>DÜŞÜN|KİTAP</li>
+    </ul>
+
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo-item">
+                <a href="letgo.html" target="_blank">
+                    <img src="img/Letgo.png" alt="Letgo">
+                </a>
+            </div>
+            <div class="logo-item" onclick="alert('Etsy linkine tıklanıldı!')">
+                <img src="img/Etsy.png" alt="Etsy">
+            </div>
+            <div class="logo-item" onclick="alert('Printify linkine tıklanıldı!')">
+                <img src="img/Printify.png" alt="Printify">
+            </div>
+            <div class="logo-item">
+                <a href="https://www.gardrops.com/BerkayP" target="_blank">
+                    <img src="img/gardrops.png" alt="Gardrops">
+                </a>
+            </div>
+            <div class="logo-item">
+                <a href="https://www.instagram.com/stories/highlights/18018575789469275/" target="_blank">
+                    <img src="img/instagram.jpg" alt="Instagram"> 
+                </a>
+            </div>
+            <div class="logo-item">
+                <a href="Kod.html" target="_blank">
+                    <img src="img/indirim.jpg" alt="İndirim Kodları">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
